@@ -28,5 +28,5 @@ local function get_theta(v0, v1)
 	local v0_norm = get_normalized_vec(v0)
 	local projection_len = dot(v0_norm, v1)
 	local v1_mag = get_magnitude(v1)
-	return rad_to_deg(math.acos(projection_len / v1_mag))
+	return math.acos(projection_len / v1_mag)
 end
